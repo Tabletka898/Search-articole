@@ -32,7 +32,17 @@ function showResults(){
         li.innerHTML = articles[i].replace(new RegExp(val,"i"),'<b>'+ val +'</b>');
         ul.appendChild(li);
         //!!!!!!!!!!!!!!!!!!!!!!!!!!
+        var div = document.createElement('div');
+        var vizualizari = div.innerHTML;
+        div.style.background = "yellow";
+        div.style.position = "relative";
+        div.style.top = 30 +"px";
+        div.style.right + 250 + "px";
+        vizualizari = "vizualizari: " + views[i];
+        ul.appendChild(div);
+
       }
+
   }
 
 
